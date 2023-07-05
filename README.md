@@ -1,5 +1,5 @@
 # Pull-Requests
-A brief explanation/write-up on the nitty-grity of pull requests.
+A brief explanation/write-up on the nitty-grity of pull requests.📖
 
 In Git, a pull request is a feature that allows developers to propose changes to a repository and request that someone review and merge those changes into the main branch. It serves as a way to facilitate collaboration and maintain a controlled workflow when working with Git repositories, especially in a team setting.
 

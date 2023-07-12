@@ -27,26 +27,6 @@ By following this process, pull requests provide a structured and collaborative 
 
 Note that this is just a simplified overview, and the exact workflow may vary depending on the project, the tools used, and the specific Git hosting platform.
 
-Code Reviews: Code reviews play a crucial role in pull request workflows. They help ensure code quality, identify bugs or issues, share knowledge among team members, and promote best practices.
-
-Automated Tests: Pull requests can integrate with continuous integration and continuous deployment (CI/CD) pipelines, including automated tests. These tests validate the changes made in the pull request, such as unit tests, integration tests, or any other relevant automated checks.
-
-Auto-Merge and Status Checks: Pull requests can be configured to auto-merge once specific status checks pass successfully. These checks can include automated tests, code quality analysis, or any other custom checks required for the project. Auto-merge streamlines the workflow by automatically incorporating approved changes into the target branch.
-
-Signoffs: In some projects or organizations, pull requests may require signoffs from specific individuals or roles before they can be merged. Signoffs indicate that the proposed changes have been reviewed and approved by designated personnel, adding an extra layer of verification and accountability.
-
-Fetch, Merge, and Pull: Collaborators can utilize the following Git commands to help others in the team who may be stuck or encountering errors:
-
-Fetch: git fetch retrieves the latest changes from a remote repository without automatically merging them into the current branch. It allows collaborators to obtain the latest updates made by others, which can then be reviewed or merged later.
-
-Merge: git merge combines changes from one branch into another. Collaborators can use this command to merge changes from a branch with the main branch or another branch, resolving any conflicts that may arise.
-
-Pull: git pull is a combination of git fetch and git merge. It fetches the latest changes from a remote repository and automatically merges them into the current branch. Collaborators can use this command to update their local branch with the latest changes and incorporate them into their workflow.
-
-Understanding the differences between fetch, merge, and pull helps collaborators assist others by guiding them on the appropriate command to use based on their specific needs and circumstances.
-
-Remember, the specific Git commands provided in this explanation assume that you're using the command-line interface. Git hosting platforms like GitHub, GitLab, and Bitbucket also offer user-friendly interfaces to perform these actions, including creating pull requests and merging changes.
-
 ## Feature Branch Workflow🧑‍🏭
 Branching workflows in Git provide a structured approach to managing code changes and collaborating on projects. Pull requests play a crucial role in facilitating code review and integrating changes from one branch to another. Let's explore a common branching workflow, known as the "Feature Branch Workflow," and the corresponding Git commands involved.
 
@@ -135,7 +115,26 @@ When working with protected branches, specific rules can be configured to determ
 
 By configuring these rules, teams can establish a robust and controlled workflow for merging and committing changes to protected branches. These rules promote collaboration, and code quality, and maintain the integrity of the project's codebase. The specific rules chosen can vary based on the team's requirements, project complexity, and development process.
 
+## Adds-on
+Code Reviews: Code reviews play a crucial role in pull request workflows. They help ensure code quality, identify bugs or issues, share knowledge among team members, and promote best practices.
 
+Automated Tests: Pull requests can integrate with continuous integration and continuous deployment (CI/CD) pipelines, including automated tests. These tests validate the changes made in the pull request, such as unit tests, integration tests, or any other relevant automated checks.
+
+Auto-Merge and Status Checks: Pull requests can be configured to auto-merge once specific status checks pass successfully. These checks can include automated tests, code quality analysis, or any other custom checks required for the project. Auto-merge streamlines the workflow by automatically incorporating approved changes into the target branch.
+
+Signoffs: In some projects or organizations, pull requests may require signoffs from specific individuals or roles before they can be merged. Signoffs indicate that the proposed changes have been reviewed and approved by designated personnel, adding an extra layer of verification and accountability.
+
+Fetch, Merge, and Pull: Collaborators can utilize the following Git commands to help others in the team who may be stuck or encountering errors:
+
+Fetch: git fetch retrieves the latest changes from a remote repository without automatically merging them into the current branch. It allows collaborators to obtain the latest updates made by others, which can then be reviewed or merged later.
+
+Merge: git merge combines changes from one branch into another. Collaborators can use this command to merge changes from a branch with the main branch or another branch, resolving any conflicts that may arise.
+
+Pull: git pull is a combination of git fetch and git merge. It fetches the latest changes from a remote repository and automatically merges them into the current branch. Collaborators can use this command to update their local branch with the latest changes and incorporate them into their workflow.
+
+Understanding the differences between fetch, merge, and pull helps collaborators assist others by guiding them on the appropriate command to use based on their specific needs and circumstances.
+
+Remember, the specific Git commands provided in this explanation assume that you're using the command-line interface. Git hosting platforms like GitHub, GitLab, and Bitbucket also offer user-friendly interfaces to perform these actions, including creating pull requests and merging changes.
 
 Note that this is just a simplified overview, and the exact workflow may vary depending on the project, the tools used, and the specific Git hosting platform.
 

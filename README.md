@@ -121,51 +121,5 @@ By configuring these rules, teams can establish a robust and controlled workflow
 Note that this is just a simplified overview, and the exact workflow may vary depending on the project, the tools used, and the specific Git hosting platform.
 
 
-## Feature Branch Workflow🧑‍🏭
-Branching workflows in Git provide a structured approach to managing code changes and collaborating on projects. Pull requests play a crucial role in facilitating code review and integrating changes from one branch to another. Let's explore a common branching workflow, known as the "Feature Branch Workflow," and the corresponding Git commands involved.
-
-Feature Branch Workflow:
-1. Create a New Branch: Start by creating a new branch for the feature or task you're working on. This branch will isolate your changes from the main development branch.
-
-```shell
-git checkout -b feature/my-feature
-```
-
-2. Make Changes and Commit: Make your desired code changes within the new branch and commit them.
-
-```shell
-# Make changes
-git add .
-git commit -m "Implement feature XYZ"
-```
-
-3. Push the Branch: Push the branch with your commits to the remote repository.
-
-```shell
-git push origin feature/my-feature
-```
-
-4. Open a Pull Request: On the repository's hosting platform (e.g., GitHub, GitLab), open a pull request to merge your feature branch into the main branch.
-
-5. Review and Discuss: Collaborators or project maintainers review your pull request, provide feedback, and discuss the proposed changes. This process can include discussions, suggestions, and improvements to ensure code quality.
-
-6. Make Changes and Update the Pull Request: If changes are requested during the review process, make the necessary updates within your feature branch and push the changes to the remote repository. The pull request will automatically update with the new commits.
-
-```shell
-# Make changes
-git add .
-git commit -m "Address feedback from code review"
-git push origin feature/my-feature
-```
-
-7. Merge the Pull Request: Once the pull request is approved and ready to be merged, you can merge it into the main branch. This integrates your changes into the main codebase.
-
-8. Clean up: After the pull request is merged, you can delete the feature branch, as it has served its purpose.
-
-```shell
-git branch -d feature/my-feature
-```
-
-
 ## Fun Fact🌝
-The largest pull request ever made on GitHub was a massive 2.6 million lines of code back in 2016! It was submitted by a user named Pavel Vasilyev and contained changes to the text processing software called ASpell. This pull request was so large that it took several hours to process and caused some performance issues on GitHub's backend systems. Eventually, the pull request was closed without being merged, but it serves as a reminder of the scale and complexity that pull requests can reach. It's a testament to the flexibility and scalability of pull requests as a collaboration mechanism in large software projects.
+The largest pull request ever made on GitHub was a massive 2.6 million lines of code back in 2016! It was submitted by a user named Pavel Vasilyev and contained changes to the text-processing software called ASpell. This pull request was so large that it took several hours to process and caused some performance issues on GitHub's backend systems. Eventually, the pull request was closed without being merged, but it serves as a reminder of the scale and complexity that pull requests can reach. It's a testament to the flexibility and scalability of pull requests as a collaboration mechanism in large software projects.
